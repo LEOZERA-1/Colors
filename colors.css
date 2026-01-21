@@ -1,0 +1,49 @@
+.titulo{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: black;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.comando{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botao{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    border-style: ridge;
+    border-width: 3px;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    flex: 1;            
+    align-items: center; 
+    justify-content: space-around; 
+    padding: 20px;
+}
+.linhavertical{
+    border-left: 2px solid #000;
+    align-self: stretch; 
+    margin: 0 10px;      
+    opacity: 0.3;
+}
+
+.quadro {
+    flex: 1;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
