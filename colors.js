@@ -3,7 +3,6 @@ function generateHexCode() {
         .toString(16)
         .padStart(6, "0")}`;
 }
-
 function getTextColor(hex) {
     const r = parseInt(hex.substr(1, 2), 16);
     const g = parseInt(hex.substr(3, 2), 16);
@@ -12,9 +11,6 @@ function getTextColor(hex) {
     const luminancia = (0.299 * r + 0.587 * g + 0.114 * b);
     return luminancia > 186 ? "#000" : "#fff";
 }
-
-const quadros = document.querySelectorAll(".quadro");
-
 function gerarCores() {
     quadros.forEach((quadro) => {
         const cor = generateHexCode();
@@ -24,11 +20,10 @@ function gerarCores() {
         quadro.textContent = cor;
     });
 }
-
+const quadros = document.querySelectorAll(".quadro");
 gerarCores();
 document.addEventListener("keydown", (event) => {
     if (event.code === "Space") {
-        event.preventDefault(); 
         gerarCores();
     }
 });
