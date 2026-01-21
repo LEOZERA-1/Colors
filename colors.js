@@ -1,22 +1,3 @@
-/*function generateHexCode() {
-    return `#${Math.floor(Math.random() * 16777215)
-        .toString(16)
-        .padStart(6, "0")}`;
-}
-
-const quadros = document.querySelectorAll(".quadro");
-
-document.addEventListener("keydown", (event) => {
-    if (event.code === "Space") {
-        quadros.forEach((quadro, index) => {
-            const cor = generateHexCode();
-
-            quadro.style.backgroundColor = cor;
-            quadro.textContent = cor; // mostra o HEX
-        });
-    }
-});*/
-
 function generateHexCode() {
     return `#${Math.floor(Math.random() * 16777215)
         .toString(16)
